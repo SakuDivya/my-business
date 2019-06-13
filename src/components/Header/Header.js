@@ -13,7 +13,6 @@ import s from './Header.css';
 import Link from '../Link';
 import Navigation from '../Navigation';
 import logoUrl from './logo-small.png';
-import logoUrl2x from './logo-small@2x.png';
 
 class Header extends React.Component {
   render() {
@@ -24,7 +23,7 @@ class Header extends React.Component {
           <Link className={s.brand} to="/">
             <img
               src={logoUrl}
-              srcSet={`${logoUrl2x} 2x`}
+              srcSet={`${logoUrl} 2x`}
               width="38"
               height="38"
               alt="React"
@@ -32,8 +31,8 @@ class Header extends React.Component {
             <span className={s.brandTxt}>Your Company</span>
           </Link>
           <div className={s.banner}>
-            <h1 className={s.bannerTitle}>React</h1>
-            <p className={s.bannerDesc}>Complex web apps made easy</p>
+            <h1 className={s.bannerTitle}>Grandimpex</h1>
+            <p className={s.bannerDesc}>One-stop store for all your needs</p>
           </div>
         </div>
       </div>
